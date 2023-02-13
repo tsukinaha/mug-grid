@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>移动端音游生涯个人喜好表生成器</title>
+    <meta name=keywords content="移动端音游">
+    <link rel="stylesheet" href="document.css">
+</head>
+<body>
+    <div class="anime-grid-box"></div>
+    <div class="more-link-box">
+    </div>
+    <footer>
+        <a href="https://inaha.ink" target="_blank">Inaha</a>
+        <a href="https://icp.gov.moe/?keyword=20230600" target="_blank">萌ICP备20230600号</a>
+    </footer>
+    <script src="anime-grid.js"></script>
+<script>
+const typeTexts = `入坑作
+最喜欢
+玩最多次
+最想安利
+
+最佳剧情
+最佳美术
+最佳收录曲
+最佳玩法
+
+最期待续作
+玩的最久
+氪金最多
+最被低估
+
+最过誉
+最变态
+最讨厌
+`;
+new AnimeGrid({
+    el: document.querySelector('.anime-grid-box'),
+    title: '移动端音游生涯个人喜好表',
+    key: 'margiconch-animes-grid',
+    typeTexts,
+    col: 5,
+    row: 3,
+})
+</script>
+</body>
+</html>
